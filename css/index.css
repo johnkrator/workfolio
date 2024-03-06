@@ -231,7 +231,8 @@ a {
     .hero_buttons {
         gap: 20px;
     }
-    .hero_buttons > *:nth-child(n + 4) {
+
+    .hero_buttons > *:nth-child(n + 3) {
         display: none;
     }
 }
