@@ -1,0 +1,333 @@
+body {
+    margin: 0;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #000000;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_logo > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav_logo > a > i {
+    font-size: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.in {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.clave {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*navbar*/
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 200px;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-links li {
+    list-style: none;
+    margin-right: 20px;
+    font-style: 16px;
+    font-weight: bold;
+}
+
+.navbar-links li:hover {
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*auth*/
+.contact-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact > button {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 0.7em 2em;
+    border-radius: 2em;
+    font-weight: bold;
+}
+
+.contact > button:hover {
+    background: #ffffff;
+    color: #000000;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.lang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.1em;
+    cursor: pointer;
+}
+
+.us {
+    font-size: 12px;
+}
+
+.en {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*hero section */
+.hero_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+    padding: 0 200px;
+}
+
+.hero_description {
+    width: 50vw;
+}
+
+.hero_image {
+    width: 50vw;
+}
+
+.hero_image > img {
+    width: 130%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hero_buttons {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero_buttons > button {
+    background: #FCA61D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.hero_buttons > button:hover {
+    background: #ffffff;
+    color: #FCA61D;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero_description > h1 {
+    font-size: 50px;
+}
+
+.hero_description > p {
+    font-size: 20px;
+}
+
+.windows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.windows > i {
+    font-size: 30px;
+}
+
+.mac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.mac > i {
+    font-size: 30px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .hero_buttons {
+        gap: 20px;
+    }
+    .hero_buttons > *:nth-child(n + 4) {
+        display: none;
+    }
+}
+
+/*navbar-mobile*/
+@media screen and (max-width: 768px) {
+    .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .hero_buttons {
+        gap: 30px;
+    }
+
+    .hero_buttons > *:nth-child(n + 5) {
+        display: none;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-toggle > i {
+        font-size: 40px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        gap: 10px;
+        padding: 10px 0;
+        background-color: #333;
+    }
+
+    .contact-option {
+        display: none;
+    }
+
+    .contact-option.active-auth {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        background-color: #333333;
+    }
+
+    /*hero section */
+    .hero_section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+
+    .hero_description {
+        width: 100%;
+    }
+
+    .hero_image {
+        width: 100%;
+    }
+
+    .hero_image > img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero_description > h1 {
+        font-size: 40px;
+    }
+
+    .hero_description > p {
+        font-size: 20px;
+    }
+
+    .hero_buttons {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+}
